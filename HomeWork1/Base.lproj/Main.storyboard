@@ -16,19 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5C-b8-Z27">
-                                <rect key="frame" x="20" y="44" width="374" height="373"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftd-8I-P40">
+                                <rect key="frame" x="20" y="44" width="374" height="393"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="0.0" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ftd-8I-P40" secondAttribute="height" multiplier="374:393" id="iAy-FU-Uvn"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I80-UB-lYj">
-                                <rect key="frame" x="20" y="459" width="374" height="403"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l59-w2-vqD">
+                                <rect key="frame" x="20" y="461" width="374" height="401"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l59-w2-vqD" secondAttribute="height" multiplier="374:401" id="0JR-qg-3j1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l59-w2-vqD" firstAttribute="top" secondItem="Ftd-8I-P40" secondAttribute="bottom" constant="24" id="HWu-Qp-lgS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l59-w2-vqD" secondAttribute="trailing" constant="20" id="I7F-Nd-ZIA"/>
+                            <constraint firstItem="Ftd-8I-P40" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KLP-2j-Twl"/>
+                            <constraint firstItem="l59-w2-vqD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N1N-Ap-vhQ"/>
+                            <constraint firstItem="l59-w2-vqD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RsJ-CS-BcU"/>
+                            <constraint firstItem="l59-w2-vqD" firstAttribute="top" secondItem="Ftd-8I-P40" secondAttribute="bottom" constant="24" id="Zmp-vL-hex"/>
+                            <constraint firstItem="l59-w2-vqD" firstAttribute="top" secondItem="Ftd-8I-P40" secondAttribute="bottom" constant="24" id="aHY-iQ-MUL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ftd-8I-P40" secondAttribute="trailing" constant="20" id="lsf-CK-Vd6"/>
+                            <constraint firstItem="Ftd-8I-P40" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oE0-Rq-jAq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,9 +59,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
